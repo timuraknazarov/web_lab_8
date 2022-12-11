@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab8</title>
+    <link rel="stylesheet" href="lab8css.css">
+</head>
+<body>
+    <div class="tableBlock">
+        <div class="tableElem" id="0">
+            <input type="text">
+            <input type="number">
+            <button onclick="UpElem(this.value.replace(' up', ''))" value="0 up">↑</button>
+            <button onclick="DownElem(this.value.replace(' down', ''))" value="0 down">↓</button>
+            <button onclick="deleteElem(this.value.replace(' del', ''))" value="0 del">x</button>
+        </div>
+    </div>
+    <div class="buttonBlock">
+        <button onclick="createElem()">Добавить элемент</button><br>
+        <button onclick="saveResult()">Сохранить</button>
+    </div>
+    <div class="jsonBlock">
+    </div>
+    <script src="lab8js.js"></script>
+</body>
+</html>
